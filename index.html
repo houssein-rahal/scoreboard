@@ -1,0 +1,29 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="column">
+                <h3 class="board-title">HOME</h3>
+                <h2 id ="score"class="score">0</h2>
+                <div class="add-points-btns-home">
+                    <button class="plus-one-point" onclick="incrementOne()">+1</button>
+                    <button class="plus-two-point" onclick="incrementTwo()">+2</button>
+                    <button class="plus-three-point" onclick="incrementThree()">+3</button>
+                </div>
+            </div>
+                <button class="reset-btn" id="reset-btn" onclick="reset()">RESET</button>    
+            <div class="column">
+                <h3 class="board-title">GUEST</h3>
+                <h2 id="guest-score"class="score" >0</h2>
+                <div class="add-points-btns-home">
+                    <button class="plus-one-point" onclick="incrementOneGuest()">+1</button>
+                    <button class="plus-two-point" onclick="incrementTwoGuest()">+2</button>
+                    <button class="plus-three-point" onclick="incrementThreeGuest()">+3</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
